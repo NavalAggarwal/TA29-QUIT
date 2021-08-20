@@ -1,0 +1,21 @@
+cause_of_death,deaths
+All diseases of the circulatory system (ICD-10 I00I99),8593550
+All neoplasms (ICD-10 C00D48),4437972
+Coronary heart disease (ICD-10 I20I25),3755042
+Cerebrovascular disease (ICD-10 I60I69),2087080
+All diseases of the respiratory system (ICD-10 J00J99),1829840
+All external causes of morbidity and mortality (ICD-10 V01Y98),1473488
+Stroke (ICD-10 I60I64),790890
+All certain infectious and parasitic diseases (ICD-10 A00B99),776672
+Influenza and pneumonia (ICD-10 J09J18),766286
+"Lung cancer (ICD-10 C33, C34)",710910
+"Selected respiratory conditions (ICD-10 J09J18, J20J22, J40J47, J60J70, J80J86, J90J99)",562362
+Chronic obstructive pulmonary disease (COPD) (ICD-10 J40J44),559674
+"All endocrine, nutritional and metabolic diseases (ICD-10 E00E90)",453908
+"Colorectal cancer (ICD-10 C18C20, C26.0)",446928
+"Dementia including Alzheimer disease (ICD-10 F01, F03, G30)",437160
+All diseases of the digestive system (ICD-10 K00K93),429410
+Diabetes (ICD-10 E10E14),414804
+All diseases of the nervous system (ICD-10 G00G99),382732
+All mental and behavioural disorders (ICD-10 F00F99),370170
+Breast cancer (ICD-10 C50),335620
