@@ -47,7 +47,7 @@ var colorset = ["#377eb8","#4daf4a","#984ea3","#377eb8","#4daf4a","#984ea3","#37
 var svg = d3.select("#graph")
         .append("svg")
         .style("width", width + margin.left + margin.right + "px")
-        .style("height", height + margin.top + margin.bottom + "px")
+        .style("height", height + margin.top + margin.bottom + 100 + "px")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
         .append("g")
@@ -55,6 +55,21 @@ var svg = d3.select("#graph")
         .attr("class", "svg");
     
   
+        // ----------------
+        // Create a tooltip
+        // ----------------
+var tooltip = d3.select("#graph")
+        .append("div")
+        .style("opacity", 0)
+        .attr("class", "tooltip")
+        .style("position", "absolute")
+        .style("background-color", "white")
+        .style("border", "solid")
+        .style("border-width", "1px")
+        .style("border-radius", "5px")
+        .style("padding", "5px")
+
+
 
     
     
@@ -62,7 +77,7 @@ var svg = d3.select("#graph")
 d3.csv("Adults_data.csv", function(error, data) {
     if (error) throw error;
     
-    console.log(data) 
+//    console.log(data) 
         
            // Format the data
   data.forEach(function(d) {
@@ -87,7 +102,7 @@ console.log(nested_group)
 
         
 var smokingFrequencyGroup = d3.map(data, function(d){return(d.Characteristic)}).keys()
-console.log(smokingFrequencyGroup)
+//console.log(smokingFrequencyGroup)
 
     
 var x = d3.scaleLinear()
@@ -203,60 +218,22 @@ function make_y_gridlines() {
 
 		initialPath
 			.attr("d", function(d){
+
+            console.log(d)
 				return valueLine(d.values)
 			})
 			.attr("class", "line")
         .attr("stroke", function(d, i){ return colorset[i] })
+
+
           
        .style("stroke-width", 2)
         .style("fill", "none")
+                    .on('mouseover', mouseover)
+            .on('mousemove', mousemove)
+//            .on('mouseout', mouseleave)
         
-//        console.log('smokingFrequency')
-//        console.log(smokingFrequency.values)
-        
-//    var smokingDot = selectFrequencyGroups.selectAll("circle")
-//        .data(smokingFrequency, function(d) {
-//        console.log('NAVAL')
-//        console.log(d.values)
-//        
-//        return d.values; 
-//    })
-//    .enter()
-//    .append("circle")
-//    .attr("r", 3)
-//    .attr("cx", function(d) { return x(new Date(d.Year)) ; })
-//    .attr("cy", function(d) { return y(d.Percent); })
-//    .style("fill", function(d,i) { return colorset[i]; });
-        
-        
-        // Add the points
-    selectFrequencyGroups
-      .append("g")
-      .selectAll("dot")
-      .data(function(d) { return d.values; })
-      .enter()
-      .append("circle")
-        .attr("cx", function(d) { return x(new Date(d.Year))  } )
-        .attr("cy", function(d) { return y(d.Percent) } )
-        .attr("r", 5)
-        .attr("fill", "#69b3a2")
-        
-        
-        
-
-//        
-//    var circularDots = svg.selectAll("dot")
-//            .data(smokingFrequency)
-//			.enter()
-//            .append("circle")
-//            .attr("cx", function(d) { return x(new Date(d.Year)) } )
-//            .attr("cy", function(d) { return y(+d.Percent) } )
-//            .attr("r", 3)
-//            .style("fill", function(d,i) {
-//                            return d.color = colorset[i] ; })
-//                    .style("stroke", function(d,i) {
-//                            return d.color = colorset[i] ; })
-        
+                                
         
         
  
@@ -297,20 +274,38 @@ function make_y_gridlines() {
           
                 .style("stroke-width", 2)
                 .style("fill", "none")
-        
-        
-            selectFrequencyGroups.selectAll("circle")
-    .data(function(d) { return d.values; })
-			.enter()
-    .append("circle")
-    .attr("r", 3)
-    .attr("cx", function(d) { return x(new Date(d.Year)); })
-    .attr("cy", function(d) { return y(d.Percent); })
-    .style("fill", function(d,i) { return colorset[i] });
-        
-
+//            .on('mouseover', mouseover)
+            .on('mousemove', mousemove)
+//            .on('mouseout', mouseleave)
 
  	}
+    
+    
+            // Three function that change the tooltip when user hover / move / leave a cell
+var mouseover = function(d) {
+    console.log(d)
+    
+    tooltip.style("opacity", 1)
+
+
+        }
+        var mousemove = function(d) {
+            console.log(d)
+            tooltip
+                .html("Year: " + d.Year + "<br>" + "Propotion: " + d.Result) 
+                .style("left", (d3.mouse(this)[0]+90) + "px")
+                .style("top", (d3.mouse(this)[1]) + "px")
+        }
+        var mouseleave = function(d) {
+            console.log(d)
+            tooltip
+                .style("opacity", 0)
+            d3.select(this)
+                // .attr("stroke", "none")
+                .style("opacity", 0.8)
+        }
+        
+        
     
 var legendArray = ['Male', 'Female', 'Person']
 
@@ -327,10 +322,7 @@ lineLegend.append("text").text(function (d) {return d;})
 lineLegend.append("rect")
     .attr("fill", function (d, i) {return colorset[i] ; })
     .attr("width", 10).attr("height", 10);
-
-
-    
-    
+ 
     
       // Create a dropdown
     var smokingFrequencyDropDown = d3.select("#smokingFrequencyDropDown")
@@ -340,10 +332,6 @@ lineLegend.append("rect")
             .append('option')
           .text(function (d) { return d; }) // text showed in the menu
           .attr("value", function (d) { return d; }) // corresponding value returned by the 
-
-
-
-
 
         // When the button is changed, run the updateChart function
         d3.select("#smokingFrequencyDropDown").on("change", function(d) {
