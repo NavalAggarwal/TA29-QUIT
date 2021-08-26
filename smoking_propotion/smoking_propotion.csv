@@ -1,0 +1,741 @@
+Year,Region,Characteristic,Age,Sex,Result
+1998,NSW,Daily,18+,Persons,21.8
+1998,VIC,Daily,18+,Persons,22.9
+1998,Qld,Daily,18+,Persons,24.3
+1998,WA,Daily,18+,Persons,23.6
+1998,SA,Daily,18+,Persons,19.4
+1998,Tas,Daily,18+,Persons,25.3
+1998,ACT,Daily,18+,Persons,22.9
+1998,NT,Daily,18+,Persons,32.5
+1998,Australia,Daily,18+,Persons,22.7
+2001,NSW,Daily,18+,Persons,18.6
+2001,VIC,Daily,18+,Persons,19.9
+2001,Qld,Daily,18+,Persons,21.6
+2001,WA,Daily,18+,Persons,20.8
+2001,SA,Daily,18+,Persons,20.5
+2001,Tas,Daily,18+,Persons,21.4
+2001,ACT,Daily,18+,Persons,18.5
+2001,NT,Daily,18+,Persons,28.7
+2001,Australia,Daily,18+,Persons,20.0
+2004,NSW,Daily,18+,Persons,17.2
+2004,VIC,Daily,18+,Persons,18.2
+2004,Qld,Daily,18+,Persons,20.7
+2004,WA,Daily,18+,Persons,16.4
+2004,SA,Daily,18+,Persons,17.2
+2004,Tas,Daily,18+,Persons,22.3
+2004,ACT,Daily,18+,Persons,16.1
+2004,NT,Daily,18+,Persons,28.5
+2004,Australia,Daily,18+,Persons,18.2
+2007,NSW,Daily,18+,Persons,17.2
+2007,VIC,Daily,18+,Persons,17.4
+2007,Qld,Daily,18+,Persons,17.9
+2007,WA,Daily,18+,Persons,15.6
+2007,SA,Daily,18+,Persons,17.6
+2007,Tas,Daily,18+,Persons,24.0
+2007,ACT,Daily,18+,Persons,15.2
+2007,NT,Daily,18+,Persons,27.1
+2007,Australia,Daily,18+,Persons,17.5
+2010,NSW,Daily,18+,Persons,15.0
+2010,VIC,Daily,18+,Persons,15.5
+2010,Qld,Daily,18+,Persons,17.7
+2010,WA,Daily,18+,Persons,16.5
+2010,SA,Daily,18+,Persons,15.7
+2010,Tas,Daily,18+,Persons,16.9
+2010,ACT,Daily,18+,Persons,11.7
+2010,NT,Daily,18+,Persons,23.9
+2010,Australia,Daily,18+,Persons,15.9
+2013,NSW,Daily,18+,Persons,12.2
+2013,VIC,Daily,18+,Persons,12.6
+2013,Qld,Daily,18+,Persons,15.7
+2013,WA,Daily,18+,Persons,12.5
+2013,SA,Daily,18+,Persons,13.6
+2013,Tas,Daily,18+,Persons,16.7
+2013,ACT,Daily,18+,Persons,9.9
+2013,NT,Daily,18+,Persons,22.2
+2013,Australia,Daily,18+,Persons,13.3
+2016,NSW,Daily,18+,Persons,12.0
+2016,VIC,Daily,18+,Persons,12.3
+2016,Qld,Daily,18+,Persons,15.2
+2016,WA,Daily,18+,Persons,12.2
+2016,SA,Daily,18+,Persons,11.4
+2016,Tas,Daily,18+,Persons,16.9
+2016,ACT,Daily,18+,Persons,9.9
+2016,NT,Daily,18+,Persons,18.5
+2016,Australia,Daily,18+,Persons,12.8
+2010,NSW,Daily,14+,Males,15.6
+2010,NSW,Weekly,14+,Males,1.7
+2010,NSW,Less than weekly,14+,Males,1.3
+2010,NSW,Daily,14+,Females,12.9
+2010,NSW,Weekly,14+,Females,1.0
+2010,NSW,Less than weekly,14+,Females,1.2
+2010,NSW,Daily,14+,Persons,14.2
+2010,NSW,Weekly,14+,Persons,1.4
+2010,NSW,Less than weekly,14+,Persons,1.2
+2010,VIC,Daily,14+,Males,15.0
+2010,VIC,Weekly,14+,Males,2.6
+2010,VIC,Less than weekly,14+,Males,1.5
+2010,VIC,Daily,14+,Females,14.7
+2010,VIC,Weekly,14+,Females,1.4
+2010,VIC,Less than weekly,14+,Females,1.4
+2010,VIC,Daily,14+,Persons,14.9
+2010,VIC,Weekly,14+,Persons,2.0
+2010,VIC,Less than weekly,14+,Persons,1.4
+2010,Qld,Daily,14+,Males,18.4
+2010,Qld,Weekly,14+,Males,1.7
+2010,Qld,Less than weekly,14+,Males,1.7
+2010,Qld,Daily,14+,Females,15.0
+2010,Qld,Weekly,14+,Females,1.5
+2010,Qld,Less than weekly,14+,Females,1.1
+2010,Qld,Daily,14+,Persons,16.7
+2010,Qld,Weekly,14+,Persons,1.6
+2010,Qld,Less than weekly,14+,Persons,1.4
+2010,WA,Daily,14+,Males,17.5
+2010,WA,Weekly,14+,Males,2.1
+2010,WA,Less than weekly,14+,Males,2.4
+2010,WA,Daily,14+,Females,13.6
+2010,WA,Weekly,14+,Females,0.8
+2010,WA,Less than weekly,14+,Females,0.9
+2010,WA,Daily,14+,Persons,15.6
+2010,WA,Weekly,14+,Persons,1.5
+2010,WA,Less than weekly,14+,Persons,1.6
+2010,SA,Daily,14+,Males,17.1
+2010,SA,Weekly,14+,Males,0.6
+2010,SA,Less than weekly,14+,Males,1.4
+2010,SA,Daily,14+,Females,13.1
+2010,SA,Weekly,14+,Females,0.8
+2010,SA,Less than weekly,14+,Females,2.0
+2010,SA,Daily,14+,Persons,15.0
+2010,SA,Weekly,14+,Persons,0.7
+2010,SA,Less than weekly,14+,Persons,1.7
+2010,Tas,Daily,14+,Males,16.1
+2010,Tas,Weekly,14+,Males,1.9
+2010,Tas,Less than weekly,14+,Males,1.2
+2010,Tas,Daily,14+,Females,15.8
+2010,Tas,Weekly,14+,Females,1.4
+2010,Tas,Less than weekly,14+,Females,0.6
+2010,Tas,Daily,14+,Persons,15.9
+2010,Tas,Weekly,14+,Persons,1.7
+2010,Tas,Less than weekly,14+,Persons,0.9
+2010,ACT,Daily,14+,Males,12.0
+2010,ACT,Weekly,14+,Males,1.6
+2010,ACT,Less than weekly,14+,Males,3.0
+2010,ACT,Daily,14+,Females,10.1
+2010,ACT,Weekly,14+,Females,0.4
+2010,ACT,Less than weekly,14+,Females,0.7
+2010,ACT,Daily,14+,Persons,11.0
+2010,ACT,Weekly,14+,Persons,1.0
+2010,ACT,Less than weekly,14+,Persons,1.8
+2010,NT,Daily,14+,Males,27.5
+2010,NT,Weekly,14+,Males,2.1
+2010,NT,Less than weekly,14+,Males,1.8
+2010,NT,Daily,14+,Females,16.8
+2010,NT,Weekly,14+,Females,2.4
+2010,NT,Less than weekly,14+,Females,1.0
+2010,NT,Daily,14+,Persons,22.3
+2010,NT,Weekly,14+,Persons,2.2
+2010,NT,Less than weekly,14+,Persons,1.4
+2010,Australia,Daily,14+,Males,16.4
+2010,Australia,Weekly,14+,Males,1.9
+2010,Australia,Less than weekly,14+,Males,1.6
+2010,Australia,Daily,14+,Females,13.9
+2010,Australia,Weekly,14+,Females,1.2
+2010,Australia,Less than weekly,14+,Females,1.2
+2010,Australia,Daily,14+,Persons,15.1
+2010,Australia,Weekly,14+,Persons,1.5
+2010,Australia,Less than weekly,14+,Persons,1.4
+2013,NSW,Daily,14+,Males,13.1
+2013,NSW,Weekly,14+,Males,1.8
+2013,NSW,Less than weekly,14+,Males,2.0
+2013,NSW,Daily,14+,Females,10.3
+2013,NSW,Weekly,14+,Females,1.0
+2013,NSW,Less than weekly,14+,Females,1.1
+2013,NSW,Daily,14+,Persons,11.7
+2013,NSW,Weekly,14+,Persons,1.4
+2013,NSW,Less than weekly,14+,Persons,1.6
+2013,VIC,Daily,14+,Males,13.9
+2013,VIC,Weekly,14+,Males,2.3
+2013,VIC,Less than weekly,14+,Males,2.3
+2013,VIC,Daily,14+,Females,10.6
+2013,VIC,Weekly,14+,Females,1.3
+2013,VIC,Less than weekly,14+,Females,1.4
+2013,VIC,Daily,14+,Persons,12.2
+2013,VIC,Weekly,14+,Persons,1.8
+2013,VIC,Less than weekly,14+,Persons,1.8
+2013,Qld,Daily,14+,Males,16.8
+2013,Qld,Weekly,14+,Males,1.7
+2013,Qld,Less than weekly,14+,Males,1.2
+2013,Qld,Daily,14+,Females,13.3
+2013,Qld,Weekly,14+,Females,0.7
+2013,Qld,Less than weekly,14+,Females,1.1
+2013,Qld,Daily,14+,Persons,15.0
+2013,Qld,Weekly,14+,Persons,1.2
+2013,Qld,Less than weekly,14+,Persons,1.2
+2013,WA,Daily,14+,Males,15.7
+2013,WA,Weekly,14+,Males,1.1
+2013,WA,Less than weekly,14+,Males,3.0
+2013,WA,Daily,14+,Females,9.0
+2013,WA,Weekly,14+,Females,1.2
+2013,WA,Less than weekly,14+,Females,1.4
+2013,WA,Daily,14+,Persons,12.4
+2013,WA,Weekly,14+,Persons,1.2
+2013,WA,Less than weekly,14+,Persons,2.2
+2013,SA,Daily,14+,Males,12.5
+2013,SA,Weekly,14+,Males,0.6
+2013,SA,Less than weekly,14+,Males,2.8
+2013,SA,Daily,14+,Females,13.1
+2013,SA,Weekly,14+,Females,1.0
+2013,SA,Less than weekly,14+,Females,0.9
+2013,SA,Daily,14+,Persons,12.8
+2013,SA,Weekly,14+,Persons,0.8
+2013,SA,Less than weekly,14+,Persons,1.8
+2013,Tas,Daily,14+,Males,19.2
+2013,Tas,Weekly,14+,Males,1.9
+2013,Tas,Less than weekly,14+,Males,1.2
+2013,Tas,Daily,14+,Females,13.0
+2013,Tas,Weekly,14+,Females,0.6
+2013,Tas,Less than weekly,14+,Females,1.1
+2013,Tas,Daily,14+,Persons,16.1
+2013,Tas,Weekly,14+,Persons,1.2
+2013,Tas,Less than weekly,14+,Persons,1.1
+2013,ACT,Daily,14+,Males,9.7
+2013,ACT,Weekly,14+,Males,2.6
+2013,ACT,Less than weekly,14+,Males,0.8
+2013,ACT,Daily,14+,Females,9.6
+2013,ACT,Weekly,14+,Females,0.3
+2013,ACT,Less than weekly,14+,Females,1.2
+2013,ACT,Daily,14+,Persons,9.7
+2013,ACT,Weekly,14+,Persons,1.5
+2013,ACT,Less than weekly,14+,Persons,1.0
+2013,Australia,Daily,14+,Males,14.5
+2013,Australia,Weekly,14+,Males,1.8
+2013,Australia,Less than weekly,14+,Males,2.0
+2013,Australia,Daily,14+,Females,11.2
+2013,Australia,Weekly,14+,Females,1.0
+2013,Australia,Less than weekly,14+,Females,1.2
+2013,Australia,Daily,14+,Persons,12.8
+2013,Australia,Weekly,14+,Persons,1.4
+2013,Australia,Less than weekly,14+,Persons,1.6
+2016,NSW,Daily,14+,Males,12.3
+2016,NSW,Weekly,14+,Males,1.4
+2016,NSW,Less than weekly,14+,Males,1.3
+2016,NSW,Daily,14+,Females,10.7
+2016,NSW,Weekly,14+,Females,1.0
+2016,NSW,Less than weekly,14+,Females,1.3
+2016,NSW,Daily,14+,Persons,11.5
+2016,NSW,Weekly,14+,Persons,1.2
+2016,NSW,Less than weekly,14+,Persons,1.3
+2016,VIC,Daily,14+,Males,13.9
+2016,VIC,Weekly,14+,Males,1.5
+2016,VIC,Less than weekly,14+,Males,1.8
+2016,VIC,Daily,14+,Females,9.6
+2016,VIC,Weekly,14+,Females,1.4
+2016,VIC,Less than weekly,14+,Females,1.1
+2016,VIC,Daily,14+,Persons,11.7
+2016,VIC,Weekly,14+,Persons,1.4
+2016,VIC,Less than weekly,14+,Persons,1.4
+2016,Qld,Daily,14+,Males,17.3
+2016,Qld,Weekly,14+,Males,1.7
+2016,Qld,Less than weekly,14+,Males,2.2
+2016,Qld,Daily,14+,Females,11.8
+2016,Qld,Weekly,14+,Females,1.1
+2016,Qld,Less than weekly,14+,Females,0.5
+2016,Qld,Daily,14+,Persons,14.5
+2016,Qld,Weekly,14+,Persons,1.4
+2016,Qld,Less than weekly,14+,Persons,1.3
+2016,WA,Daily,14+,Males,12.1
+2016,WA,Weekly,14+,Males,2.1
+2016,WA,Less than weekly,14+,Males,1.6
+2016,WA,Daily,14+,Females,10.8
+2016,WA,Weekly,14+,Females,1.0
+2016,WA,Less than weekly,14+,Females,1.7
+2016,WA,Daily,14+,Persons,11.5
+2016,WA,Weekly,14+,Persons,1.5
+2016,WA,Less than weekly,14+,Persons,1.7
+2016,SA,Daily,14+,Males,12.3
+2016,SA,Weekly,14+,Males,1.7
+2016,SA,Less than weekly,14+,Males,1.6
+2016,SA,Daily,14+,Females,9.4
+2016,SA,Weekly,14+,Females,0.9
+2016,SA,Less than weekly,14+,Females,0.8
+2016,SA,Daily,14+,Persons,10.8
+2016,SA,Weekly,14+,Persons,1.3
+2016,SA,Less than weekly,14+,Persons,1.2
+2016,Tas,Daily,14+,Males,17.7
+2016,Tas,Weekly,14+,Males,2.4
+2016,Tas,Less than weekly,14+,Males,1.3
+2016,Tas,Daily,14+,Females,14.4
+2016,Tas,Weekly,14+,Females,0.5
+2016,Tas,Less than weekly,14+,Females,1.3
+2016,Tas,Daily,14+,Persons,16.0
+2016,Tas,Weekly,14+,Persons,1.4
+2016,Tas,Less than weekly,14+,Persons,1.3
+2016,ACT,Daily,14+,Males,10.4
+2016,ACT,Weekly,14+,Males,1.5
+2016,ACT,Less than weekly,14+,Males,1.3
+2016,ACT,Daily,14+,Females,8.7
+2016,ACT,Less than weekly,14+,Females,1.2
+2016,ACT,Daily,14+,Persons,9.5
+2016,ACT,Weekly,14+,Persons,0.8
+2016,ACT,Less than weekly,14+,Persons,1.2
+2016,NT,Daily,14+,Males,18.6
+2016,NT,Weekly,14+,Males,3.6
+2016,NT,Less than weekly,14+,Males,1.1
+2016,NT,Daily,14+,Females,15.7
+2016,NT,Weekly,14+,Females,1.2
+2016,NT,Less than weekly,14+,Females,1.4
+2016,NT,Daily,14+,Persons,17.2
+2016,NT,Weekly,14+,Persons,2.5
+2016,NT,Less than weekly,14+,Persons,1.2
+2016,Australia,Daily,14+,Males,13.8
+2016,Australia,Weekly,14+,Males,1.6
+2016,Australia,Less than weekly,14+,Males,1.6
+2016,Australia,Daily,14+,Females,10.7
+2016,Australia,Weekly,14+,Females,1.1
+2016,Australia,Less than weekly,14+,Females,1.1
+2016,Australia,Daily,14+,Persons,12.2
+2016,Australia,Weekly,14+,Persons,1.3
+2016,Australia,Less than weekly,14+,Persons,1.4
+2010,NSW,Daily,60+,Persons,8.9
+2010,NSW,Daily,75+,Persons,5.0
+2010,NSW,Daily,12+,Persons,13.8
+2013,NSW,Daily,60+,Persons,8.8
+2013,NSW,Daily,75+,Persons,3.3
+2013,NSW,Daily,12+,Persons,11.4
+2016,NSW,Daily,60+,Persons,7.5
+2016,NSW,Daily,75+,Persons,4.4
+2016,NSW,Daily,12+,Persons,11.2
+2010,VIC,Daily,60+,Persons,9.2
+2010,VIC,Daily,75+,Persons,3.0
+2010,VIC,Daily,12+,Persons,14.4
+2013,VIC,Daily,60+,Persons,8.1
+2013,VIC,Daily,75+,Persons,5.8
+2013,VIC,Daily,12+,Persons,11.9
+2016,VIC,Daily,60+,Persons,8.2
+2016,VIC,Daily,75+,Persons,4.7
+2016,VIC,Daily,12+,Persons,11.4
+2010,Qld,Daily,60+,Persons,9.4
+2010,Qld,Daily,75+,Persons,4.6
+2010,Qld,Daily,12+,Persons,16.2
+2013,Qld,Daily,60+,Persons,9.5
+2013,Qld,Daily,75+,Persons,5.1
+2013,Qld,Daily,12+,Persons,14.6
+2016,Qld,Daily,60+,Persons,9.1
+2016,Qld,Daily,75+,Persons,4.4
+2016,Qld,Daily,12+,Persons,14.1
+2010,WA,Daily,60+,Persons,9.2
+2010,WA,Daily,75+,Persons,3.9
+2010,WA,Daily,12+,Persons,15.1
+2013,WA,Daily,60+,Persons,7.8
+2013,WA,Daily,75+,Persons,3.5
+2013,WA,Daily,12+,Persons,12.0
+2016,WA,Daily,60+,Persons,8.8
+2016,WA,Daily,75+,Persons,4.5
+2016,WA,Daily,12+,Persons,11.1
+2010,SA,Daily,60+,Persons,8.5
+2010,SA,Daily,75+,Persons,2.8
+2010,SA,Daily,12+,Persons,14.6
+2013,SA,Daily,60+,Persons,9.0
+2013,SA,Daily,75+,Persons,3.8
+2013,SA,Daily,12+,Persons,12.5
+2016,SA,Daily,60+,Persons,6.6
+2016,SA,Daily,75+,Persons,4.5
+2016,SA,Daily,12+,Persons,10.5
+2010,Tas,Daily,60+,Persons,9.3
+2010,Tas,Daily,75+,Persons,8.3
+2010,Tas,Daily,12+,Persons,15.4
+2013,Tas,Daily,60+,Persons,10.8
+2013,Tas,Daily,75+,Persons,6.3
+2013,Tas,Daily,12+,Persons,15.6
+2016,Tas,Daily,60+,Persons,12.8
+2016,Tas,Daily,75+,Persons,4.2
+2016,Tas,Daily,12+,Persons,15.6
+2010,ACT,Daily,60+,Persons,8.3
+2010,ACT,Daily,75+,Persons,6.4
+2010,ACT,Daily,12+,Persons,10.7
+2013,ACT,Daily,60+,Persons,8.2
+2013,ACT,Daily,75+,Persons,6.4
+2013,ACT,Daily,12+,Persons,9.4
+2016,ACT,Daily,60+,Persons,7.3
+2016,ACT,Daily,75+,Persons,4.9
+2016,ACT,Daily,12+,Persons,9.3
+2010,NT,Daily,60+,Persons,16.0
+2010,NT,Daily,12+,Persons,21.5
+2013,NT,Daily,60+,Persons,15.5
+2013,NT,Daily,75+,Persons,13.8
+2013,NT,Daily,12+,Persons,20.6
+2016,NT,Daily,60+,Persons,13.5
+2016,NT,Daily,75+,Persons,6.6
+2016,NT,Daily,12+,Persons,16.7
+2010,Australia,Daily,60+,Persons,9.1
+2010,Australia,Daily,75+,Persons,4.2
+2010,Australia,Daily,12+,Persons,14.7
+2013,Australia,Daily,60+,Persons,8.8
+2013,Australia,Daily,75+,Persons,4.4
+2013,Australia,Daily,12+,Persons,12.4
+2016,Australia,Daily,60+,Persons,8.2
+2016,Australia,Daily,75+,Persons,4.5
+2016,Australia,Daily,12+,Persons,11.9
+2013,NT,Less than weekly,14+,Persons,1.4
+2013,NT,Daily,14+,Persons,21.3
+2013,NT,Weekly,14+,Persons,1.5
+2001,NSW,Daily,14+,Persons,18.0
+1998,Tas,Daily,14+,Persons,24.4
+1998,WA,Daily,14+,Persons,22.6
+2001,ACT,Daily,14+,Persons,18.4
+2004,Tas,Daily,14+,Persons,21.6
+2004,NT,Daily,14+,Persons,27.4
+2004,ACT,Daily,14+,Persons,16.2
+1998,VIC,Daily,14+,Persons,23.4
+1998,Qld,Daily,14+,Persons,24.4
+2007,NSW,Daily,14+,Persons,16.3
+2001,NT,Daily,14+,Persons,27.9
+2001,Qld,Daily,14+,Persons,21.0
+1998,Australia,Daily,14+,Persons,21.8
+2007,NT,Daily,14+,Persons,25.3
+1998,NT,Daily,14+,Persons,30.9
+2001,Australia,Daily,14+,Persons,19.4
+2007,Qld,Daily,14+,Persons,17.2
+2004,VIC,Daily,14+,Persons,17.5
+2004,NSW,Daily,14+,Persons,16.5
+2007,ACT,Daily,14+,Persons,14.7
+2007,Australia,Daily,14+,Persons,16.6
+2004,Australia,Daily,14+,Persons,17.5
+2001,VIC,Daily,14+,Persons,19.2
+2004,Qld,Daily,14+,Persons,19.8
+2007,VIC,Daily,14+,Persons,16.5
+2007,SA,Daily,14+,Persons,16.5
+1998,SA,Daily,14+,Persons,19.3
+2001,WA,Daily,14+,Persons,20.0
+2007,WA,Daily,14+,Persons,14.8
+2007,Tas,Daily,14+,Persons,22.6
+1998,NSW,Daily,14+,Persons,21.2
+2001,SA,Daily,14+,Persons,20.1
+2004,WA,Daily,14+,Persons,15.6
+2001,Tas,Daily,14+,Persons,20.6
+1998,ACT,Daily,14+,Persons,22.5
+2004,SA,Daily,14+,Persons,16.5
+2013,NT,Daily,14+,Males,23.8
+2013,NT,Weekly,14+,Females,0.7
+2013,NT,Less than weekly,14+,Males,1.2
+2013,NT,Daily,14+,Females,18.5
+2013,NT,Less than weekly,14+,Females,1.5
+2013,NT,Weekly,14+,Males,2.3
+2013,SA,Daily,30 to 39,Persons,12.3
+2010,VIC,Daily,30 to 39,Persons,17.6
+2016,Australia,Daily,65 to 74,Persons,8.5
+2013,SA,Daily,65 to 74,Persons,10.4
+2010,Tas,Daily,30 to 39,Persons,20.6
+2016,ACT,Daily,25 to 34,Persons,11.0
+2016,VIC,Daily,55 to 64,Persons,14.8
+2016,Tas,Daily,12 to 17,Persons,2.1
+2016,SA,Daily,40 to 49,Persons,17.7
+2013,ACT,Daily,14 to 19,Persons,6.7
+2010,Australia,Daily,30 to 39,Persons,18.5
+2016,Australia,Daily,30 to 39,Persons,14.0
+2016,SA,Daily,35 to 44,Persons,12.6
+2013,NT,Daily,40 to 49,Persons,20.3
+2010,NT,Daily,14 to 19,Persons,6.4
+2010,ACT,Daily,30 to 39,Persons,10.0
+2016,Australia,Daily,14 to 19,Persons,3.0
+2010,NSW,Daily,50 to 59,Persons,15.5
+2016,SA,Daily,25 to 34,Persons,12.0
+2010,VIC,Daily,45 to 54,Persons,18.6
+2013,Australia,Daily,65 to 74,Persons,9.7
+2010,SA,Daily,20 to 29,Persons,16.1
+2013,VIC,Daily,14 to 19,Persons,7.0
+2016,Australia,Daily,50 to 59,Persons,14.3
+2013,Qld,Daily,14 to 19,Persons,8.0
+2013,WA,Daily,25 to 34,Persons,11.1
+2010,SA,Daily,45 to 54,Persons,23.1
+2010,NSW,Daily,40 to 49,Persons,18.5
+2010,NSW,Daily,55 to 64,Persons,14.1
+2013,Australia,Daily,12 to 17,Persons,3.4
+2013,Australia,Daily,25 to 34,Persons,14.4
+2013,Qld,Daily,18 to 24,Persons,17.9
+2010,NSW,Daily,45 to 54,Persons,17.6
+2010,Australia,Daily,40 to 49,Persons,19.5
+2016,Tas,Daily,40 to 49,Persons,21.0
+2016,NSW,Daily,55 to 64,Persons,11.5
+2016,NT,Daily,40 to 49,Persons,19.1
+2010,NSW,Daily,65 to 74,Persons,9.6
+2013,Australia,Daily,40 to 49,Persons,16.2
+2010,Tas,Daily,45 to 54,Persons,16.6
+2010,Qld,Daily,50 to 59,Persons,18.5
+2016,NSW,Daily,65 to 74,Persons,7.7
+2016,NSW,Daily,50 to 59,Persons,13.2
+2013,WA,Daily,14 to 19,Persons,9.9
+2013,SA,Daily,25 to 34,Persons,13.3
+2010,Australia,Daily,25 to 34,Persons,18.5
+2010,WA,Daily,50 to 59,Persons,19.8
+2010,NSW,Daily,18 to 24,Persons,16.5
+2016,NT,Daily,55 to 64,Persons,26.3
+2013,Tas,Daily,55 to 64,Persons,18.0
+2016,VIC,Daily,35 to 44,Persons,14.4
+2013,VIC,Daily,40 to 49,Persons,14.2
+2010,WA,Daily,14 to 19,Persons,6.9
+2016,ACT,Daily,20 to 29,Persons,12.0
+2010,Qld,Daily,40 to 49,Persons,21.5
+2016,ACT,Daily,45 to 54,Persons,12.4
+2016,VIC,Daily,40 to 49,Persons,18.2
+2010,NT,Daily,20 to 29,Persons,25.7
+2013,Australia,Daily,30 to 39,Persons,13.7
+2013,SA,Daily,14 to 19,Persons,3.0
+2016,WA,Daily,20 to 29,Persons,9.2
+2016,Qld,Daily,55 to 64,Persons,13.7
+2010,NT,Daily,65 to 74,Persons,25.0
+2010,ACT,Daily,55 to 64,Persons,11.0
+2016,WA,Daily,55 to 64,Persons,14.4
+2016,WA,Daily,35 to 44,Persons,15.5
+2016,Qld,Daily,20 to 29,Persons,18.9
+2013,NT,Daily,55 to 64,Persons,21.8
+2010,NSW,Daily,35 to 44,Persons,16.4
+2010,WA,Daily,45 to 54,Persons,21.0
+2010,Tas,Daily,18 to 24,Persons,22.9
+2010,Tas,Daily,65 to 74,Persons,7.5
+2016,WA,Daily,18 to 24,Persons,6.4
+2013,WA,Daily,35 to 44,Persons,16.6
+2013,Tas,Daily,25 to 34,Persons,19.9
+2013,NSW,Daily,25 to 34,Persons,14.8
+2016,Qld,Daily,40 to 49,Persons,19.8
+2013,Australia,Daily,20 to 29,Persons,15.2
+2010,WA,Daily,12 to 17,Persons,2.5
+2010,WA,Daily,40 to 49,Persons,19.5
+2010,Tas,Daily,40 to 49,Persons,18.5
+2010,Qld,Daily,35 to 44,Persons,23.1
+2013,Tas,Daily,45 to 54,Persons,16.7
+2010,NT,Daily,50 to 59,Persons,26.1
+2016,ACT,Daily,18 to 24,Persons,10.1
+2016,NT,Daily,14 to 19,Persons,4.8
+2010,Tas,Daily,14 to 19,Persons,4.2
+2010,Tas,Daily,12 to 17,Persons,1.9
+2016,NSW,Daily,18 to 24,Persons,13.1
+2010,NSW,Daily,20 to 29,Persons,18.4
+2016,NSW,Daily,12 to 17,Persons,1.8
+2016,VIC,Daily,50 to 59,Persons,16.0
+2016,ACT,Daily,14 to 19,Persons,4.0
+2010,SA,Daily,12 to 17,Persons,3.3
+2010,NT,Daily,55 to 64,Persons,16.3
+2010,Qld,Daily,20 to 29,Persons,18.4
+2013,Australia,Daily,18 to 24,Persons,13.4
+2016,NT,Daily,20 to 29,Persons,19.2
+2013,NSW,Daily,20 to 29,Persons,13.4
+2016,VIC,Daily,25 to 34,Persons,12.6
+2010,Tas,Daily,25 to 34,Persons,20.2
+2013,NT,Daily,35 to 44,Persons,26.3
+2010,ACT,Daily,14 to 19,Persons,3.6
+2016,NSW,Daily,25 to 34,Persons,15.5
+2010,ACT,Daily,40 to 49,Persons,13.8
+2010,SA,Daily,18 to 24,Persons,12.2
+2016,Tas,Daily,20 to 29,Persons,20.0
+2010,Qld,Daily,14 to 19,Persons,7.3
+2013,ACT,Daily,18 to 24,Persons,9.2
+2013,NSW,Daily,12 to 17,Persons,2.5
+2016,VIC,Daily,18 to 24,Persons,8.7
+2010,SA,Daily,50 to 59,Persons,19.0
+2013,SA,Daily,40 to 49,Persons,22.2
+2013,NT,Daily,45 to 54,Persons,20.8
+2013,SA,Daily,55 to 64,Persons,13.7
+2016,ACT,Daily,12 to 17,Persons,1.8
+2016,Tas,Daily,55 to 64,Persons,19.1
+2013,SA,Daily,20 to 29,Persons,11.8
+2010,SA,Daily,65 to 74,Persons,10.0
+2013,Qld,Daily,50 to 59,Persons,15.9
+2013,Tas,Daily,35 to 44,Persons,13.7
+2010,NSW,Daily,25 to 34,Persons,18.2
+2016,Australia,Daily,12 to 17,Persons,1.5
+2013,ACT,Daily,30 to 39,Persons,9.1
+2016,Qld,Daily,14 to 19,Persons,4.7
+2010,VIC,Daily,14 to 19,Persons,7.9
+2013,Qld,Daily,12 to 17,Persons,3.4
+2013,SA,Daily,45 to 54,Persons,21.3
+2013,Tas,Daily,40 to 49,Persons,15.0
+2016,Tas,Daily,50 to 59,Persons,15.7
+2013,Tas,Daily,20 to 29,Persons,30.1
+2010,NT,Daily,45 to 54,Persons,31.4
+2013,Qld,Daily,25 to 34,Persons,16.7
+2016,Tas,Daily,25 to 34,Persons,17.5
+2016,Qld,Daily,12 to 17,Persons,2.8
+2010,Australia,Daily,50 to 59,Persons,17.4
+2013,Australia,Daily,35 to 44,Persons,14.9
+2013,VIC,Daily,35 to 44,Persons,14.2
+2016,NSW,Daily,35 to 44,Persons,12.0
+2010,Qld,Daily,45 to 54,Persons,21.7
+2013,NT,Daily,50 to 59,Persons,24.9
+2010,VIC,Daily,25 to 34,Persons,18.8
+2010,Qld,Daily,55 to 64,Persons,14.9
+2013,NSW,Daily,55 to 64,Persons,13.3
+2013,Qld,Daily,20 to 29,Persons,18.4
+2010,VIC,Daily,35 to 44,Persons,17.1
+2010,Australia,Daily,18 to 24,Persons,15.7
+2016,Qld,Daily,45 to 54,Persons,16.2
+2010,Australia,Daily,35 to 44,Persons,18.7
+2016,WA,Daily,30 to 39,Persons,15.5
+2016,VIC,Daily,45 to 54,Persons,16.9
+2010,VIC,Daily,20 to 29,Persons,17.7
+2016,VIC,Daily,20 to 29,Persons,13.2
+2013,VIC,Daily,12 to 17,Persons,4.0
+2010,NT,Daily,25 to 34,Persons,24.7
+2016,Tas,Daily,14 to 19,Persons,4.9
+2010,WA,Daily,55 to 64,Persons,17.0
+2016,VIC,Daily,12 to 17,Persons,0.8
+2016,WA,Daily,45 to 54,Persons,15.9
+2010,SA,Daily,14 to 19,Persons,6.4
+2016,Tas,Daily,18 to 24,Persons,21.0
+2010,NT,Daily,35 to 44,Persons,27.7
+2010,Qld,Daily,18 to 24,Persons,17.5
+2010,Qld,Daily,25 to 34,Persons,19.3
+2016,NSW,Daily,20 to 29,Persons,15.6
+2013,Australia,Daily,50 to 59,Persons,15.0
+2010,VIC,Daily,55 to 64,Persons,16.6
+2010,VIC,Daily,65 to 74,Persons,10.2
+2016,Tas,Daily,30 to 39,Persons,21.4
+2013,VIC,Daily,20 to 29,Persons,14.9
+2013,NT,Daily,20 to 29,Persons,20.3
+2016,NT,Daily,18 to 24,Persons,17.9
+2010,SA,Daily,30 to 39,Persons,17.3
+2010,SA,Daily,55 to 64,Persons,15.0
+2010,Australia,Daily,45 to 54,Persons,19.4
+2016,SA,Daily,20 to 29,Persons,13.3
+2010,VIC,Daily,40 to 49,Persons,18.2
+2013,NSW,Daily,18 to 24,Persons,10.7
+2010,Tas,Daily,50 to 59,Persons,18.2
+2010,Tas,Daily,35 to 44,Persons,23.2
+2016,NT,Daily,35 to 44,Persons,18.5
+2016,Australia,Daily,55 to 64,Persons,13.4
+2010,VIC,Daily,12 to 17,Persons,3.7
+2013,NSW,Daily,30 to 39,Persons,13.4
+2016,ACT,Daily,65 to 74,Persons,5.9
+2016,ACT,Daily,30 to 39,Persons,8.3
+2010,NSW,Daily,14 to 19,Persons,6.5
+2013,NT,Daily,25 to 34,Persons,24.0
+2010,VIC,Daily,18 to 24,Persons,14.5
+2013,ACT,Daily,45 to 54,Persons,12.5
+2016,Qld,Daily,30 to 39,Persons,18.6
+2013,ACT,Daily,20 to 29,Persons,9.7
+2013,WA,Daily,55 to 64,Persons,11.6
+2013,NSW,Daily,50 to 59,Persons,14.5
+2013,Qld,Daily,45 to 54,Persons,19.6
+2013,NT,Daily,30 to 39,Persons,27.6
+2010,SA,Daily,40 to 49,Persons,22.9
+2016,ACT,Daily,55 to 64,Persons,9.8
+2013,WA,Daily,45 to 54,Persons,15.1
+2016,SA,Daily,14 to 19,Persons,4.9
+2016,NT,Daily,25 to 34,Persons,16.9
+2016,NT,Daily,45 to 54,Persons,21.4
+2013,WA,Daily,20 to 29,Persons,15.3
+2013,VIC,Daily,30 to 39,Persons,12.9
+2010,VIC,Daily,50 to 59,Persons,17.4
+2013,VIC,Daily,18 to 24,Persons,12.1
+2010,Australia,Daily,55 to 64,Persons,15.2
+2013,NSW,Daily,40 to 49,Persons,13.3
+2016,Qld,Daily,65 to 74,Persons,10.5
+2016,Tas,Daily,65 to 74,Persons,13.7
+2016,SA,Daily,65 to 74,Persons,5.4
+2013,NSW,Daily,35 to 44,Persons,12.2
+2010,ACT,Daily,25 to 34,Persons,13.4
+2016,NSW,Daily,40 to 49,Persons,13.8
+2016,NT,Daily,65 to 74,Persons,10.4
+2010,Qld,Daily,65 to 74,Persons,9.9
+2010,NT,Daily,12 to 17,Persons,2.0
+2010,WA,Daily,35 to 44,Persons,18.7
+2010,Tas,Daily,20 to 29,Persons,25.5
+2013,Tas,Daily,12 to 17,Persons,4.4
+2016,WA,Daily,40 to 49,Persons,16.6
+2013,NT,Daily,14 to 19,Persons,15.0
+2010,Australia,Daily,14 to 19,Persons,6.9
+2010,NT,Daily,18 to 24,Persons,15.7
+2013,Tas,Daily,14 to 19,Persons,9.7
+2016,SA,Daily,30 to 39,Persons,10.5
+2010,ACT,Daily,65 to 74,Persons,7.7
+2010,SA,Daily,25 to 34,Persons,16.6
+2013,ACT,Daily,55 to 64,Persons,8.9
+2010,WA,Daily,18 to 24,Persons,14.4
+2016,Australia,Daily,40 to 49,Persons,16.9
+2010,Qld,Daily,12 to 17,Persons,2.5
+2013,WA,Daily,50 to 59,Persons,11.9
+2016,WA,Daily,50 to 59,Persons,13.8
+2013,VIC,Daily,25 to 34,Persons,13.5
+2010,NSW,Daily,30 to 39,Persons,16.3
+2010,ACT,Daily,18 to 24,Persons,16.4
+2013,Australia,Daily,14 to 19,Persons,7.0
+2016,NT,Daily,30 to 39,Persons,15.2
+2013,WA,Daily,30 to 39,Persons,12.9
+2010,Tas,Daily,55 to 64,Persons,14.2
+2013,NT,Daily,18 to 24,Persons,19.7
+2010,Australia,Daily,12 to 17,Persons,2.5
+2013,Qld,Daily,30 to 39,Persons,15.7
+2016,VIC,Daily,65 to 74,Persons,8.4
+2013,NSW,Daily,14 to 19,Persons,5.9
+2013,ACT,Daily,12 to 17,Persons,3.7
+2016,Australia,Daily,45 to 54,Persons,16.0
+2013,SA,Daily,50 to 59,Persons,16.5
+2016,Australia,Daily,25 to 34,Persons,14.7
+2016,WA,Daily,25 to 34,Persons,12.0
+2013,VIC,Daily,65 to 74,Persons,8.0
+2016,Tas,Daily,45 to 54,Persons,16.3
+2010,WA,Daily,65 to 74,Persons,10.6
+2013,Qld,Daily,65 to 74,Persons,11.4
+2013,Tas,Daily,65 to 74,Persons,10.4
+2013,Qld,Daily,55 to 64,Persons,13.5
+2013,VIC,Daily,45 to 54,Persons,15.4
+2016,WA,Daily,14 to 19,Persons,0.9
+2010,NT,Daily,40 to 49,Persons,30.7
+2013,VIC,Daily,55 to 64,Persons,13.6
+2013,NT,Daily,12 to 17,Persons,6.2
+2016,Qld,Daily,50 to 59,Persons,14.2
+2013,WA,Daily,18 to 24,Persons,15.5
+2010,WA,Daily,20 to 29,Persons,16.2
+2013,WA,Daily,65 to 74,Persons,7.2
+2016,VIC,Daily,14 to 19,Persons,1.8
+2016,ACT,Daily,40 to 49,Persons,12.5
+2010,WA,Daily,25 to 34,Persons,18.2
+2013,ACT,Daily,25 to 34,Persons,8.7
+2013,NT,Daily,65 to 74,Persons,15.1
+2016,ACT,Daily,50 to 59,Persons,11.0
+2013,ACT,Daily,50 to 59,Persons,10.8
+2013,Australia,Daily,55 to 64,Persons,13.4
+2010,NT,Daily,30 to 39,Persons,20.9
+2016,Qld,Daily,18 to 24,Persons,14.5
+2016,SA,Daily,55 to 64,Persons,12.1
+2016,Qld,Daily,35 to 44,Persons,20.1
+2016,Tas,Daily,35 to 44,Persons,23.8
+2016,Australia,Daily,18 to 24,Persons,11.6
+2013,WA,Daily,12 to 17,Persons,6.6
+2010,WA,Daily,30 to 39,Persons,19.9
+2013,ACT,Daily,40 to 49,Persons,12.7
+2010,ACT,Daily,50 to 59,Persons,9.9
+2013,Tas,Daily,50 to 59,Persons,17.9
+2010,Qld,Daily,30 to 39,Persons,23.2
+2013,NSW,Daily,65 to 74,Persons,10.4
+2016,WA,Daily,65 to 74,Persons,8.9
+2013,ACT,Daily,65 to 74,Persons,9.0
+2016,Australia,Daily,20 to 29,Persons,14.8
+2013,SA,Daily,35 to 44,Persons,17.3
+2013,NSW,Daily,45 to 54,Persons,15.4
+2016,Qld,Daily,25 to 34,Persons,19.0
+2016,SA,Daily,45 to 54,Persons,16.8
+2016,Australia,Daily,35 to 44,Persons,15.0
+2010,ACT,Daily,35 to 44,Persons,11.1
+2016,NSW,Daily,45 to 54,Persons,15.1
+2013,VIC,Daily,50 to 59,Persons,15.5
+2013,WA,Daily,40 to 49,Persons,15.7
+2010,ACT,Daily,45 to 54,Persons,10.6
+2010,SA,Daily,35 to 44,Persons,20.6
+2013,SA,Daily,18 to 24,Persons,8.4
+2013,Qld,Daily,40 to 49,Persons,21.4
+2010,Australia,Daily,20 to 29,Persons,18.0
+2016,SA,Daily,18 to 24,Persons,12.9
+2016,SA,Daily,50 to 59,Persons,12.6
+2010,Australia,Daily,65 to 74,Persons,10.0
+2013,Tas,Daily,18 to 24,Persons,31.6
+2016,ACT,Daily,35 to 44,Persons,10.5
+2010,NSW,Daily,12 to 17,Persons,1.7
+2010,ACT,Daily,20 to 29,Persons,16.3
+2016,NT,Daily,50 to 59,Persons,27.4
+2013,Tas,Daily,30 to 39,Persons,14.1
+2013,ACT,Daily,35 to 44,Persons,12.0
+2016,NSW,Daily,30 to 39,Persons,14.2
+2013,Australia,Daily,45 to 54,Persons,16.7
+2016,VIC,Daily,30 to 39,Persons,10.4
+2013,Qld,Daily,35 to 44,Persons,18.2
+2016,NSW,Daily,14 to 19,Persons,2.9
