@@ -2,7 +2,7 @@
 <meta charset="utf-8">
 
 <!-- Load d3.js -->
-<script src="d3.v4.js"></script>
+<script src="https://d3js.org/d3.v4.js"></script>
 
 <!-- Initialize a select button -->
 
@@ -12,110 +12,105 @@
 <div id="graph"></div>
 
 <!-- Color Scale -->
-<script src="d3-scale-chromatic.v1.min.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
 
-<style>
-    
-.grid line {
-  stroke: lightgrey;
-  stroke-opacity: 0.7;
-  shape-rendering: crispEdges;
-}
+<style>    
+  .grid line {
+    stroke: lightgrey;
+    stroke-opacity: 0.7;
+    shape-rendering: crispEdges;
+  }
 
-.grid path {
-  stroke-width: 0;
-}
+  .grid path {
+    stroke-width: 0;
+  }
 </style>
 
 <script>
-// Set the margins
-var margin = {top: 60, right: 100, bottom: 20, left: 80},
-  width = 850 - margin.left - margin.right,
-  height = 570 - margin.top - margin.bottom;
+  // Set the margins
+  var margin = {top: 60, right: 100, bottom: 20, left: 80},
+    width = 850 - margin.left - margin.right,
+    height = 570 - margin.top - margin.bottom;
 
 
-var formatYear = d3.timeFormat("%Y");
-var parseYear = d3.timeParse("%Y");
+  var formatYear = d3.timeFormat("%Y");
+  var parseYear = d3.timeParse("%Y");
     
     
-var colorset = ["#377eb8","#4daf4a","#984ea3","#377eb8","#4daf4a","#984ea3","#377eb8","#4daf4a","#984ea3"]
-    
-
+  var colorset = ["#377eb8","#4daf4a","#984ea3","#377eb8","#4daf4a","#984ea3","#377eb8","#4daf4a","#984ea3"]
     
 
-// Create the svg canvas in the "graph" div
-var svg = d3.select("#graph")
-        .append("svg")
-        .style("width", width + margin.left + margin.right + "px")
-        .style("height", height + margin.top + margin.bottom + 100 + "px")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
-        .append("g")
-        .attr("transform","translate(" + margin.left + "," + margin.top + ")")
-        .attr("class", "svg");
+    
+
+  // Create the svg canvas in the "graph" div
+  var svg = d3.select("#graph")
+          .append("svg")
+          .style("width", width + margin.left + margin.right + "px")
+          .style("height", height + margin.top + margin.bottom + 100 + "px")
+          .attr("width", width + margin.left + margin.right)
+          .attr("height", height + margin.top + margin.bottom)
+          .append("g")
+          .attr("transform","translate(" + margin.left + "," + margin.top + ")")
+          .attr("class", "svg");
     
   
-        // ----------------
-        // Create a tooltip
-        // ----------------
-var tooltip = d3.select("#graph")
-        .append("div")
-        .style("opacity", 0)
-        .attr("class", "tooltip")
-        .style("position", "absolute")
-        .style("background-color", "white")
-        .style("border", "solid")
-        .style("border-width", "1px")
-        .style("border-radius", "5px")
-        .style("padding", "5px")
-
-
-
+  // ----------------
+  // Create a tooltip
+  // ----------------
+  var tooltip = d3.select("#graph")
+          .append("div")
+          .style("opacity", 0)
+          .attr("class", "tooltip")
+          .style("position", "absolute")
+          .style("background-color", "white")
+          .style("border", "solid")
+          .style("border-width", "1px")
+          .style("border-radius", "5px")
+          .style("padding", "5px")
     
+  //Read the data
+  d3.csv("Adults_data.csv", function(error, data) {
+      if (error) throw error;
     
-    //Read the data
-d3.csv("Adults_data.csv", function(error, data) {
-    if (error) throw error;
-    
-//    console.log(data) 
+  //console.log(data) 
         
-           // Format the data
+  // Format the data
   data.forEach(function(d) {
       d.Characteristic = d.Characteristic;
       d.Sex = d.Sex;
       d.Percent = d.Percent;
-//      d.Year = formatYear(parseYear(+d.Year));
+  // d.Year = formatYear(parseYear(+d.Year));
       d.Year = new Date(d.Year);
   });
     
-var nested_group = d3.nest()
-	  .key(function(d){
-	    return d.Characteristic;
-	  })
-	  .key(function(d){
-	  	return d.Sex;
-	  })
-	  .entries(data)
+  var nested_group = d3.nest()
+      .key(function(d){
+        return d.Characteristic;
+      })
+      .key(function(d){
+        return d.Sex;
+      })
+      .entries(data)
     
-console.log(nested_group) 
+  console.log(nested_group) 
 
 
         
-var smokingFrequencyGroup = d3.map(data, function(d){return(d.Characteristic)}).keys()
-//console.log(smokingFrequencyGroup)
+  var smokingFrequencyGroup = d3.map(data, function(d){return(d.Characteristic)}).keys()
+  //console.log(smokingFrequencyGroup)
 
     
-var x = d3.scaleLinear()
-        .domain(d3.extent(data, function(d) { return new Date(d.Year);  }))
-        .range([ 0, width ]);
-    
-var y = d3.scaleLinear().range([height, 0]);
+  var x = d3.scaleLinear()
+          .domain(d3.extent(data, function(d) { return new Date(d.Year);  }))
+          .range([ 0, width ]);
+      
+  var y = d3.scaleLinear().range([height, 0]);
 
 
     
-      // Scale the range of the data
-x.domain([new Date("2001"),new Date("2020")]);
-y.domain([0, 70 ]);
+  // Scale the range of the data
+  x.domain([new Date("2001"),new Date("2020")]);
+  y.domain([0, 70 ]);
   
   // Set up the x axis
   var xaxis = svg.append("g")
@@ -130,50 +125,50 @@ y.domain([0, 70 ]);
 
   // Add the Y Axis
    var yaxis = svg.append("g")
-       .attr("class", "y axis")
-       .call(d3.axisLeft(y)
-          .ticks(5)
-          .tickSizeInner(0)
-          .tickPadding(6)
-          .tickSize(0, 0));
+    .attr("class", "y axis")
+    .call(d3.axisLeft(y)
+      .ticks(5)
+      .tickSizeInner(0)
+      .tickPadding(6)
+      .tickSize(0, 0));
   
   // Add a label to the y axis
   svg.append("text")
-        .attr("transform", "rotate(-90)")
-        .attr("y", 0 - 60)
-        .attr("x", 0 - (height / 2))
-        .attr("dy", "1em")
-        .style("text-anchor", "middle")
-        .text("Proportion of people")
-        .attr("class", "y axis label");
+    .attr("transform", "rotate(-90)")
+    .attr("y", 0 - 60)
+    .attr("x", 0 - (height / 2))
+    .attr("dy", "1em")
+    .style("text-anchor", "middle")
+    .text("Proportion of people")
+    .attr("class", "y axis label");
     
 
     
-// Creating labels for  X axis:
-    svg.append("text")
-        .attr("text-anchor", "end")
-        .attr("x", width / 2)
-        .attr("y", height + margin.top + 20)
-        .text("Year");
+  // Creating labels for  X axis:
+  svg.append("text")
+    .attr("text-anchor", "end")
+    .attr("x", width / 2)
+    .attr("y", height + margin.top + 20)
+    .text("Year");
     
     
-    // Define the line
-var valueLine = d3.line()
-    .x(function(d) { return x(d.Year); })
-    .y(function(d) { return y(+d.Percent); })
+  // Define the line
+  var valueLine = d3.line()
+      .x(function(d) { return x(d.Year); })
+      .y(function(d) { return y(+d.Percent); })
 
 
-// gridlines in x axis function
-function make_x_gridlines() {		
-    return d3.axisBottom(x)
-        .ticks(10)
-}
+  // gridlines in x axis function
+  function make_x_gridlines() {		
+      return d3.axisBottom(x)
+          .ticks(10)
+  }
 
-// gridlines in y axis function
-function make_y_gridlines() {		
-    return d3.axisLeft(y)
-        .ticks(5)
-}
+  // gridlines in y axis function
+  function make_y_gridlines() {		
+      return d3.axisLeft(y)
+          .ticks(5)
+  }
   // add the X gridlines
   svg.append("g")			
       .attr("class", "grid")
@@ -231,7 +226,7 @@ function make_y_gridlines() {
         .style("fill", "none")
                     .on('mouseover', mouseover)
             .on('mousemove', mousemove)
-//            .on('mouseout', mouseleave)
+         .on('mouseout', mouseleave)
         
                                 
         
@@ -274,77 +269,72 @@ function make_y_gridlines() {
           
                 .style("stroke-width", 2)
                 .style("fill", "none")
-//            .on('mouseover', mouseover)
-            .on('mousemove', mousemove)
-//            .on('mouseout', mouseleave)
+              .on('mouseover', mouseover)
+              .on('mousemove', mousemove)
+              .on('mouseout', mouseleave)
 
  	}
     
     
             // Three function that change the tooltip when user hover / move / leave a cell
-var mouseover = function(d) {
+  var mouseover = function(d) {
     console.log(d)
     
     tooltip.style("opacity", 1)
-
-
-        }
-        var mousemove = function(d) {
-            console.log(d)
-            tooltip
-                .html("Year: " + d.Year + "<br>" + "Propotion: " + d.Result) 
-                .style("left", (d3.mouse(this)[0]+90) + "px")
-                .style("top", (d3.mouse(this)[1]) + "px")
-        }
-        var mouseleave = function(d) {
-            console.log(d)
-            tooltip
-                .style("opacity", 0)
-            d3.select(this)
-                // .attr("stroke", "none")
-                .style("opacity", 0.8)
-        }
+  }
+  var mousemove = function(d) {
+    console.log(d)
+    tooltip
+        .html("Year: " + d.Year + "<br>" + "Propotion: " + d.Result) 
+        .style("left", (d3.mouse(this)[0]+90) + "px")
+        .style("top", (d3.mouse(this)[1]) + "px")
+  }
+  var mouseleave = function(d) {
+    console.log(d)
+    tooltip
+        .style("opacity", 0)
+    d3.select(this)
+        // .attr("stroke", "none")
+        .style("opacity", 0.8)
+  }
         
         
     
-var legendArray = ['Male', 'Female', 'Person']
+  var legendArray = ['Male', 'Female', 'Person']
 
-var lineLegend = svg.selectAll(".lineLegend").data(legendArray)
+  var lineLegend = svg.selectAll(".lineLegend").data(legendArray)
     .enter().append("g")
     .attr("class","lineLegend")
     .attr("transform", function (d,i) {
             return "translate(" + width + "," + (i*20)+")";
         });
 
-lineLegend.append("text").text(function (d) {return d;})
+  lineLegend.append("text").text(function (d) {return d;})
     .attr("transform", "translate(15,9)"); //align texts with boxes
 
-lineLegend.append("rect")
+  lineLegend.append("rect")
     .attr("fill", function (d, i) {return colorset[i] ; })
     .attr("width", 10).attr("height", 10);
  
     
       // Create a dropdown
-    var smokingFrequencyDropDown = d3.select("#smokingFrequencyDropDown")
-        .selectAll('myOptions')
-             .data(smokingFrequencyGroup)
-          .enter()
-            .append('option')
-          .text(function (d) { return d; }) // text showed in the menu
-          .attr("value", function (d) { return d; }) // corresponding value returned by the 
+  var smokingFrequencyDropDown = d3.select("#smokingFrequencyDropDown")
+      .selectAll('myOptions')
+            .data(smokingFrequencyGroup)
+        .enter()
+          .append('option')
+        .text(function (d) { return d; }) // text showed in the menu
+        .attr("value", function (d) { return d; }) // corresponding value returned by the 
 
-        // When the button is changed, run the updateChart function
-        d3.select("#smokingFrequencyDropDown").on("change", function(d) {
-            // recover the option that has been chosen
-            var selectedOption = d3.select(this).property("value")
-            // run the updateChart function with this selected option
-            updateGraph(selectedOption)
-        })
+      // When the button is changed, run the updateChart function
+      d3.select("#smokingFrequencyDropDown").on("change", function(d) {
+          // recover the option that has been chosen
+          var selectedOption = d3.select(this).property("value")
+          // run the updateChart function with this selected option
+          updateGraph(selectedOption)
+      })
     
     
 
-    })
-    
-    
-    
+  })
 </script>
