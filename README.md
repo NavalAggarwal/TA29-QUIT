@@ -8,6 +8,7 @@ Branches:
 1. develop: Use this branch development purpose and create pull requests.
 2. release: use this branch for final releases.
 3. iteration1: updated branch used for iteration1.
+4. iteration2: updated branch used for iteration2.
 
 Steps:
 
