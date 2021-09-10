@@ -1,0 +1,5 @@
+This bar chart shows top-10 factors which cause death in Australia, from 2010 to 2017. We can see from the chart, smoking ranks the second of all, that means it is one of the main factors which cause deaths in Australia. Therefore, quit smoking is necessary and can save a lot of people's lives.
+
+
+
+* This chart is made based on data from ourworldindata.org Link：https://ourworldindata.org/grapher/number-of-deaths-by-risk-factor?time=1990..2017

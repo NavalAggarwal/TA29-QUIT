@@ -1,0 +1,7 @@
+This pie chart shows main diseases caused by smoking, from the chart we can see cancer is the top one disease which occupied 39%. Other top diseases
+like vascular and respiratory diseases are also some common diseases which caused by smoking.
+
+
+
+
+* This chart is made based on data from tobaccoinaustralia.org.au Link: https://www.tobaccoinaustralia.org.au/chapter-3-health-effects/3-30-total-burden-of-death-and-disease-attributable-to-tobacco-by-disease-category
