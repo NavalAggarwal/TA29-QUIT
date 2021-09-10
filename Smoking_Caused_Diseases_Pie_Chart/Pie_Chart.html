@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8">
+
+  <!-- Load d3.js -->
+  <script src="https://d3js.org/d3.v4.js"></script>
+
+  <!-- Color scale -->
+  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+
+  <!-- Add 2 buttons -->
+  <button onclick="update(data1)">All diseases</button>
+  <button onclick="update(data2)">Cancer</button>
+
+
+  <!-- Create a div where the graph will take place -->
+  <div id="my_dataviz1"></div>
+<html>
+<script>
+
+    // set the dimensions and margins of the graph
+    var width = 600
+        height = 450
+        margin = 60
+
+    // The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.
+    var radius = Math.min(width, height) / 2 - margin
+
+    // append the svg object to the div called 'my_dataviz1'
+    var svg = d3.select("#my_dataviz1")
+        .append("svg")
+        .attr("width", width)
+        .attr("height", height)
+        .append("g")
+        .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+    // create 2 data_set
+    var data1 = {"All cancer":39, "Vascular":29, "Respiratory":20, "All other":12}
+    var data2 = {"Lung cancer":71, "Other cancer":29}
+
+    var Tooltip = d3.select("#my_dataviz1")
+    .append("div")
+    .style("opacity", 0)
+    .attr("class", "tooltip")
+    .style("background-color", "white")
+    .style("border", "solid")
+    .style("border-width", "1px")
+    .style("border-radius", "5px")
+    .style("padding", "10px")
+    .style("position", "absolute")
+
+    var selectColor
+    var mouseover = function (d) {
+        selectColor = d3.select(this).attr('fill')
+        Tooltip
+        .html("Diease Name: " + d.data.key + "<br>" + "Percentage: " + d.value + "%")
+        .transition() // and apply changes to all of them
+        .duration(300)
+        .style("opacity", 0.8)
+
+        d3.select(this)
+        .style("stroke", "white")
+        .style("stroke-width", "5px")
+        .style("opacity", 1)
+        // .attr("fill", "#ffbf40");
+        .attr("fill", "grey");
+    }
+
+    var mousemove = function (d) {
+        Tooltip
+        .style("left", (d3.mouse(this)[0]+70) + "px")
+        .style("top", (d3.mouse(this)[1]+200) + "px")
+        // .html("Diease Name: " + d.data.key + "<br>" + "Percentage: " + d.value + "%")
+        // .style("top", (d3.event.pageY) + "px")
+        // .style("left", (d3.event.pageX + 10) + "px")
+    }
+
+    var mouseleave = function (d) {
+        Tooltip
+        .style("opacity", 0)
+        .style("top", (d3.event.pageY - 600) + "px")
+        .style("left", (d3.event.pageX - 600) + "px")
+
+        d3.select(this)
+        // .style("stroke", "none")
+        .style("opacity", 1)
+        .style("stroke-width", "2px")
+        .attr('fill', selectColor)
+
+    }
+
+    // shape helper to build arcs:
+    var arcGenerator = d3.arc()
+        .innerRadius(0)
+        .outerRadius(radius)
+
+    // Compute the position of each group on the pie:
+    var pie = d3.pie()
+        .value(function (d) { return d.value; })
+
+    var data_ready = pie(d3.entries(data1))
+
+    // set the color scale
+    var color = d3.scaleOrdinal()
+    .domain(["All cancer", "Vascular", "Respiratory", "All other", "Lung cancer", "Other cancer"])
+    .range(d3.schemeSet1);
+
+    var pieChart = svg
+        .selectAll('mySlices')
+        .data(data_ready)
+        .enter()
+        .append('path')
+        .attr('d', arcGenerator)
+        .attr('fill', function (d) { return (color(d.data.key)) })
+        .attr("stroke", "white")
+        .style("stroke-width", "2px")
+        .style("opacity", 1)
+        .on('mouseover', mouseover)
+        .on('mousemove', mousemove)
+        .on('mouseout', mouseleave)
+
+
+    // var size = 20
+    // dots = svg.selectAll("mydots")
+    // .data(data_ready)
+    // .enter()
+    // .append("rect")
+    //     .attr("x", 175)
+    //     .attr("y", function(d,i){ return - 180 + i*(size+5)}) // 100 is where the first dot appears. 25 is the distance between dots
+    //     .attr("width", size)
+    //     .attr("height", size)
+    //     .style("fill", function(d){ return color(d.data.key)})
+
+
+
+    // // Add one dot in the legend for each name.
+    // labels = svg.selectAll("mylabels")
+    // .data(data_ready)
+    // .enter()
+    // .append("text")
+    //     .attr("x", 205, size*1.2)
+    //     .attr("y", function(d,i){ return - 175 + i*(size+5) + (size/2)}) // 100 is where the first dot appears. 25 is the distance between dots
+    //     .style("fill", function(d){ return color(d)})
+    //     .text(function(d){ return d.data.key})
+    //     .attr("text-anchor", "left")
+    //     .style("alignment-baseline", "middle")
+
+
+
+
+
+    // A function that create / update the plot for a given variable:
+    function update(data) {
+
+        // Compute the position of each group on the pie:
+        var pie = d3.pie()
+        .value(function(d) {return d.value; })
+        // .sort(function(a, b){ console.log(a); return d3.ascending(a.key, b.key);})
+        var dataready = pie(d3.entries(data))
+
+        // d3
+        // .selectAll("svg")
+        // .remove()
+        // map to data
+        var u = svg.selectAll("path")
+        .data(dataready)
+
+
+        // Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
+        u
+        .enter()
+        .append('path')
+        .merge(u)
+        .transition()
+        .duration(1000)
+            .attr('d', d3.arc()
+                .innerRadius(0)
+                .outerRadius(radius)
+            )
+            .attr('fill', function(d){ return(color(d.data.key)) })
+            .attr("stroke", "white")
+            .style("stroke-width", "2px")
+            .style("opacity", 1)
+        // .on('mouseover', mouseover)
+        // .on('mousemove', mousemove)
+        // .on('mouseout', mouseleave)
+        // .append("circle")
+        //     .attr("cx", 200)
+        //     .attr("cy", function(d,i){ return -180 + i*25}) // 100 is where the first dot appears. 25 is the distance between dots
+        //     .attr("r", 7)
+        //     .style("fill", function(d){ return color(d.data.key)})
+        // .append("text")
+        //     .attr("x", 220)
+        //     .attr("y", function(d,i){ return -180 + i*25}) // 100 is where the first dot appears. 25 is the distance between dots
+        //     .style("fill", function(d){ return color(d)})
+        //     .text(function(d){ return d.data.key})
+        //     .attr("text-anchor", "left")
+        //     .style("alignment-baseline", "middle")
+        // .on('mouseover', mouseover)
+        // .on('mousemove', mousemove)
+        // .on('mouseout', mouseleave)
+
+        // remove the group that is not present anymore
+        // u
+        // .on('mouseover', mouseover)
+        // .on('mousemove', mousemove)
+        // .on('mouseout', mouseleave)
+
+        u
+        .exit()
+        .remove()
+
+        // dots
+        // .exit()
+        // .remove()
+        // labels
+        // .exit()
+        // .remove()
+
+        var size = 20
+        var dots = svg.selectAll("mydots")
+        .data(dataready)
+        .enter()
+        .append("rect")
+            .attr("x", 200)
+            .attr("y", function(d,i){ return - 180 + i*(size+5)}) // 100 is where the first dot appears. 25 is the distance between dots
+            .attr("width", size)
+            .attr("height", size)
+            .style("fill", function(d){ return color(d.data.key)})
+
+
+
+        // Add one dot in the legend for each name.
+        var labels = svg.selectAll("mylabels")
+        .data(dataready)
+        .enter()
+        .append("text")
+            .attr("x", 230, size*1.2)
+            .attr("y", function(d,i){ return - 175 + i*(size+5) + (size/2)}) // 100 is where the first dot appears. 25 is the distance between dots
+            .style("fill", function(d){ return color(d.data.key)})
+            .text(function(d){ return d.data.key})
+            .attr("text-anchor", "left")
+            .style("alignment-baseline", "middle")
+
+        // svg
+        // .exit()
+        // .remove()
+        // Add one dot in the legend for each name.
+        // d3
+        // .selectAll("svg")
+        // .remove()
+
+        dots
+        .exit()
+        .remove()
+        labels
+        .exit()
+        .remove()
+    }
+
+    // // Initialize the plot with the first dataset
+    update(data1)
+</script>
